@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e47a7fd8-0e83-4890-93a8-6f6362011d99" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:\IntelliJ IDEA 2019.2.2\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1gPWbLwW9ot5RQbIwSLEdRbWavP" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager">
+    <configuration name="TwoSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yjz.twosum.TwoSum" />
+      <module name="array" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yjz.twosum.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TwoSum" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e47a7fd8-0e83-4890-93a8-6f6362011d99" name="Default Changelist" comment="" />
+      <created>1598016780488</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598016780488</updated>
+      <workItem from="1598016781518" duration="2016000" />
+    </task>
+    <task id="LOCAL-00001" summary="1.TwoSum">
+      <created>1598018649535</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1598018649535</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1.TwoSum" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.TwoSum" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="355" y="0" key="CommitChangelistDialog2" timestamp="1598018648744">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="355" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1598018648744" />
+    <state x="537" y="153" key="FileChooserDialogImpl" timestamp="1598016825195">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="537" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1598016825195" />
+    <state width="1454" height="208" key="GridCell.Tab.0.bottom" timestamp="1598018877391">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1454" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1598018877391" />
+    <state width="1454" height="208" key="GridCell.Tab.0.center" timestamp="1598018877390">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1454" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1598018877390" />
+    <state width="1454" height="208" key="GridCell.Tab.0.left" timestamp="1598018877390">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1454" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1598018877390" />
+    <state width="1454" height="208" key="GridCell.Tab.0.right" timestamp="1598018877390">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1454" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1598018877390" />
+    <state x="349" y="145" key="Vcs.Push.Dialog.v2" timestamp="1598018654677">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="349" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1598018654677" />
+    <state x="166" y="22" key="new project wizard" timestamp="1598016839294">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="166" y="22" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1598016839294" />
+  </component>
+</project>
