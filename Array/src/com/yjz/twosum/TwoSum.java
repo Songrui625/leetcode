@@ -2,6 +2,7 @@ package com.yjz.twosum;
 
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.HashSet;
 
 public class TwoSum {
     public int[] twoSum(int[] nums, int target) {
@@ -28,5 +29,6 @@ public class TwoSum {
         int[] nums = new int[]{3, 2, 4};
         int target = 6;
         System.out.println(Arrays.toString(twoSum.twoSum(nums, target)));
+
     }
 }
