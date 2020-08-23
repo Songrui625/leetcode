@@ -1,4 +1,4 @@
-package com.yjz.ThreeSumCloest;
+package com.yjz.threesumcloest;
 
 import java.util.Arrays;
 
