@@ -1,8 +1,7 @@
-package com.yjz.twosum;
+package 数组.twosum;
 
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.HashSet;
 
 public class TwoSum {
     public int[] twoSum(int[] nums, int target) {

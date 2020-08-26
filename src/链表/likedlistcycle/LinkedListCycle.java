@@ -1,7 +1,4 @@
-package com.yjz.likedlistcycle;
-
-import java.util.HashSet;
-import java.util.List;
+package 链表.likedlistcycle;
 
 class ListNode{
     int val;

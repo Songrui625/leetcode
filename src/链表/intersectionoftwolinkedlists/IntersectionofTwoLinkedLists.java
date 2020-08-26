@@ -1,4 +1,4 @@
-package com.yjz.intersectionoftwolinkedlists;
+package 链表.intersectionoftwolinkedlists;
 
 class ListNode {
     int val;
@@ -29,5 +29,5 @@ public class IntersectionofTwoLinkedLists {
         }
         return null;
     }
-    
+
 }
