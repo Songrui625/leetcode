@@ -1,4 +1,4 @@
-package com.yjz.nthtribonaccinumber;
+package 递归.第N个斐波那契数;
 
 public class NthTribonacciNumber {
     public int tribonacci(int n) {

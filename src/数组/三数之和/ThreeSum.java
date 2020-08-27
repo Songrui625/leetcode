@@ -1,8 +1,7 @@
-package com.yjz.threesum;
+package 数组.三数之和;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashSet;
 import java.util.List;
 
 public class ThreeSum {
