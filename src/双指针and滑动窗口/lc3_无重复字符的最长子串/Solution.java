@@ -1,52 +1,40 @@
 package 双指针and滑动窗口.lc3_无重复字符的最长子串;
 
 import java.util.HashMap;
+import java.util.HashSet;
 
 public class Solution {
+
 //    public int lengthOfLongestSubstring(String s) {
-//        if (s == null) {
-//            return 0;
-//        }
-//        int len = s.length();
-//        if (len == 1) {
-//            return 1;
-//        }
 //        int maxLen = 0;
-//        for (int i = 0; i < len - 1; i++) {
-//            for (int j = i + 1; j < len; j++) {
-//                if (s.charAt(i) == s.charAt(j) || s.charAt(j) == s.charAt(j-1)) {
-//                    if (maxLen < j - i) {
-//                        maxLen = j - i;
-//                    }
-//                    break;
-//                }
-//                if (j == len - 1) {
-//                    maxLen = j - i + 1;
-//                }
+//        int n = s.length();
+//        int right = 0;
+//        HashSet<Character> set = new HashSet<>();
+//        for (int i = 0; i < n; i++) {
+//            if (i != 0) {
+//                set.remove(s.charAt(i));
 //            }
+//            while (right != n && !set.contains(s.charAt(right))) {
+//                set.add(s.charAt(right));
+//                right++;
+//            }
+//            maxLen = Math.max(maxLen, right - i);
 //        }
-//        if (maxLen == 0) {
-//            maxLen = len;
-//        }
-//
 //        return maxLen;
 //    }
 
     public int lengthOfLongestSubstring(String s) {
-        if (s.length()==0) return 0;
-        HashMap<Character, Integer> map = new HashMap<Character, Integer>();
-        int max = 0;
-        int left = 0;
-        int len = s.length();
-        for(int i = 0; i < len; i ++){
-            if(map.containsKey(s.charAt(i))){
-                left = Math.max(left,map.get(s.charAt(i)) + 1);
-            }
-            map.put(s.charAt(i),i);
-            max = Math.max(max,i-left+1);
+        int[] pos = new int[128];
+        int maxLen = 0;
+        int n = s.length();
+        for (int i = 0, j = 0; j < n; j++) {
+            char ch = s.charAt(j);
+            //这里相当于左指针所指字符和右指针所指字符重复时，则左指针向右移，保证窗口没有重复的字符。
+            i = Math.max(i, pos[ch]);
+            maxLen = Math.max(maxLen, j - i + 1);
+            pos[ch] = j + 1; //记录下如果当前字符的下一个位置。
         }
-        return max;
-
+        return maxLen;
     }
 
     public static void main(String[] args) {
