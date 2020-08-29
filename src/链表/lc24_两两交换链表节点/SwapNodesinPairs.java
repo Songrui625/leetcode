@@ -1,4 +1,4 @@
-package 链表.两两交换链表节点;
+package 链表.lc24_两两交换链表节点;
 
 class ListNode {
     int val;

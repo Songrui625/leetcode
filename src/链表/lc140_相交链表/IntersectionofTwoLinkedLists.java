@@ -1,4 +1,4 @@
-package 链表.intersectionoftwolinkedlists;
+package 链表.lc140_相交链表;
 
 class ListNode {
     int val;

@@ -1,4 +1,4 @@
-package 数组.最接近的三个数;
+package 数组.lc16_最接近的三数之和;
 
 import java.util.Arrays;
 

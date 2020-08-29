@@ -1,4 +1,4 @@
-package 数组.三数之和;
+package 数组.lc15_三数之和;
 
 import java.util.ArrayList;
 import java.util.Arrays;

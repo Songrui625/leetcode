@@ -1,4 +1,4 @@
-package 数组.twosum;
+package 数组.lc1_两数之和;
 
 import java.util.Arrays;
 import java.util.HashMap;

@@ -1,4 +1,4 @@
-package 递归.第N个斐波那契数;
+package 递归.lc1137_第N个斐波那契数;
 
 public class NthTribonacciNumber {
     public int tribonacci(int n) {

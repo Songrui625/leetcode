@@ -1,4 +1,4 @@
-package 链表.likedlistcycle;
+package 链表.lc141_likedlistcycle;
 
 class ListNode{
     int val;
