@@ -4,6 +4,9 @@ public class Solution {
 
     //version:1.0
     public int minSubArrayLen(int s, int[] nums) {
+        if (nums.length == 0) {
+            return 0;
+        }
         int left, right;
         int sum = 0;
         int res = Integer.MAX_VALUE;
@@ -24,7 +27,10 @@ public class Solution {
                 }
             }
         }
-        return res;
+        if (res != Integer.MAX_VALUE) {
+            return res;
+        }
+        return 0;
     }
 
     public static void main(String[] args) {
