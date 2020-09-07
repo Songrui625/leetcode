@@ -3,30 +3,53 @@ package 双指针and滑动窗口.lc209_长度最小的子数组;
 
 /**
  * 解题思想一：暴力求解，双重for循环枚举出所有的结果，遇到一次更小的就更新
- * 解题思想：slide window
- *
+ * 解题思想二：slide window
+ * 左右指针指向第一个索引，记录窗口内的值，右指针不断右移，如果窗口内的值满足解
+ * 则更新最优解，并把左指针右移。直至遍历完所有的解集。
  */
 
 public class Solution {
 
     //暴力求解
+//    public int minSubArrayLen(int s, int[] nums) {
+//        int len = Integer.MAX_VALUE;
+//        for (int i = 0; i < nums.length; i++) {
+//            int sum = 0;
+//            for (int j = i; j < nums.length; j++) {
+//                sum += nums[j];
+//                if (sum >= s && len > j - i + 1) {
+//                    len = j - i + 1;
+//                    break;
+//                }
+//            }
+//        }
+//
+//        return len;
+//    }
+
+    //slide window: version: 2.0
     public int minSubArrayLen(int s, int[] nums) {
-        int len = Integer.MAX_VALUE;
-        for (int i = 0; i < nums.length; i++) {
-            int sum = 0;
-            for (int j = i; j < nums.length; j++) {
-                sum += nums[j];
-                if (sum >= s && len > j - i + 1) {
-                    len = j - i + 1;
-                    break;
+        int left, right;
+        left = right = 0;
+        int n = nums.length;
+        int res = Integer.MAX_VALUE;
+        int sum = 0;
+        while (right < n) {
+            sum += nums[right];
+            right++; //这里导致了长度为左闭右开
+
+            while (sum >= s) {
+                if (res > right - left) {
+                    res = right - left;
                 }
+                sum -= nums[left++];
             }
         }
 
-        return len;
+        return res == Integer.MAX_VALUE ? 0 : res;
     }
 
-    //version:1.0
+        //version:1.0
 //    public int minSubArrayLen(int s, int[] nums) {
 //        if (nums.length == 0) {
 //            return 0;
