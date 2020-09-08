@@ -1,4 +1,4 @@
-package 链表.lc141_likedlistcycle;
+package 快慢指针.lc141_循环链表;
 
 class ListNode{
     int val;
