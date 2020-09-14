@@ -39,8 +39,6 @@ public class Solution {
         Solution solution = new Solution();
         System.out.println(solution.reverse(
                 -1534236469));
-
-
     }
 
 }
