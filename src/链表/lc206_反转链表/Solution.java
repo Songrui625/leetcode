@@ -17,15 +17,42 @@ class ListNode {
  */
 
 public class Solution {
-    public ListNode reverseList(ListNode head) {
+//    public ListNode reverseList(ListNode head) {
+//        if (head == null || head.next == null) return head;
+//        ListNode curNode = head;
+//        while(curNode.next != null) {
+//            ListNode tmp = curNode.next;
+//            curNode.next = tmp.next;
+//            tmp.next = head;
+//            head = tmp;
+//        }
+//        return head;
+//    }
+
+    public static ListNode reverseList(ListNode head) {
         if (head == null || head.next == null) return head;
-        ListNode curNode = head;
-        while(curNode.next != null) {
-            ListNode tmp = curNode.next;
-            curNode.next = tmp.next;
-            tmp.next = head;
-            head = tmp;
+        ListNode ret = reverseList(head.next);
+        head.next.next = head;
+        head.next = null;
+        return ret;
+    }
+
+    public static void traverse(ListNode head) {
+        while (head != null) {
+            System.out.print(head.val + " ");
+            head = head.next;
         }
-        return head;
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+        ListNode head = new ListNode(1);
+        head.next = new ListNode(2);
+        head.next.next = new ListNode(3);
+        System.out.print("反转前：");
+        traverse(head);
+        head = reverseList(head);
+        System.out.print("反转后：");
+        traverse(head);
     }
 }
