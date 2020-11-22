@@ -1,14 +1,6 @@
 package 链表.lc61_旋转链表;
 
-class ListNode {
-    int val;
-    ListNode next;
-
-    public ListNode(int val) {
-        this.val = val;
-        this.next = null;
-    }
-}
+import 链表.ListNode;
 
 /**
  * 主要思路：根据数学关系，在长度为n的链表向移动k个位置形成新链表。

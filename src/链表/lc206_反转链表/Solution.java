@@ -1,14 +1,6 @@
 package 链表.lc206_反转链表;
 
-class ListNode {
-    int val;
-    ListNode next;
-
-    public ListNode(int val) {
-        this.val = val;
-        this.next = null;
-    }
-}
+import 链表.ListNode;
 
 /**
  * 迭代法：我们对当前节点与后一个结点交换。

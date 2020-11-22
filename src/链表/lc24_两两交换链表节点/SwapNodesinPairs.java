@@ -1,14 +1,6 @@
 package 链表.lc24_两两交换链表节点;
 
-class ListNode {
-    int val;
-    ListNode next;
-
-    public ListNode(int val) {
-        this.val = val;
-        this.next = null;
-    }
-}
+import 链表.ListNode;
 
 public class SwapNodesinPairs {
 //    public ListNode swapPairs(ListNode head) {

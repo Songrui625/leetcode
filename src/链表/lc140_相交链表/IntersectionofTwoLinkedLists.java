@@ -1,14 +1,6 @@
 package 链表.lc140_相交链表;
 
-class ListNode {
-    int val;
-    ListNode next;
-
-    public ListNode(int val) {
-        this.val = val;
-        this.next = null;
-    }
-}
+import 链表.ListNode;
 
 public class IntersectionofTwoLinkedLists {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
