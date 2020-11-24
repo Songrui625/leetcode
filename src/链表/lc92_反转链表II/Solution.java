@@ -5,14 +5,17 @@ import 链表.ListNode;
 public class Solution {
     public ListNode reverseBetween(ListNode head, int m, int n) {
         if (head == null || head.next == null) return head;
+        ListNode dummy = new ListNode(0);
+        dummy.next = head;
         int count = 0;
 
-        ListNode p = head;
+        ListNode p = dummy;
         ListNode subHead = null;
         ListNode prev = null;
-        ListNode tail = null;
+
+        while (--m > 0) p = p.next;
+
         while (p.next != null) {
-            count++;
             if (count == m - 1) {
                 prev = p;
                 subHead = p.next;
@@ -24,12 +27,28 @@ public class Solution {
                 p.next = tmp.next;
                 tmp.next = subHead;
                 subHead = tmp;
+                if (count == n - 1) {
+                    break;
+                }
             }
+            count++;
         }
         prev.next = subHead;
 
-        return head;
+        return dummy.next;
     }
+
+//    public ListNode reverseBetween(ListNode head, int m, int n) {
+//        if (head == null || head.next == null) return head;
+//
+//        ListNode dummy = new ListNode(0);
+//        dummy.next = head;
+//        ListNode p = dummy;
+//
+//        while (--m > 0) p = p.next;
+//
+//
+//    }
 
     public static void main(String[] args) {
         ListNode head = new ListNode(1);
