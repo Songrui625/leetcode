@@ -7,32 +7,25 @@ public class Solution {
         if (head == null || head.next == null) return head;
         ListNode dummy = new ListNode(0);
         dummy.next = head;
-        int count = 0;
+        int count = n - m;
 
         ListNode p = dummy;
-        ListNode subHead = null;
-        ListNode prev = null;
-
+        //定位到要反转结点的前驱节点
         while (--m > 0) p = p.next;
 
-        while (p.next != null) {
-            if (count == m - 1) {
-                prev = p;
-                subHead = p.next;
-                p = p.next;
-                continue;
-            }
-            if (count > m - 1 && count <= n) {
-                ListNode tmp = p.next;
-                p.next = tmp.next;
-                tmp.next = subHead;
-                subHead = tmp;
-                if (count == n - 1) {
-                    break;
-                }
-            }
-            count++;
+        ListNode subHead = p.next;
+        ListNode prev = p;
+        p = p.next;
+
+        //count躺反转
+        while (p.next != null && count-- > 0) {
+            ListNode tmp = p.next;
+            p.next = tmp.next;
+            tmp.next = subHead;
+            subHead = tmp;
         }
+
+        //连接反转后的头。
         prev.next = subHead;
 
         return dummy.next;
