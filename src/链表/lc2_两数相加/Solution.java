@@ -24,7 +24,7 @@ public class Solution {
             carry = sum/10;
             cur.next = newNode;
             cur = newNode;
-            //正常遍历
+            //正常遍历，p本身可能为null，此时不动
             if (p != null)
                 p = p.next;
             if (q != null)
