@@ -12,25 +12,46 @@ import java.util.Set;
  */
 
 public class Solution {
+//    public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
+//        if (headA == null || headB == null)
+//            return null;
+//
+//        Set<ListNode> set = new HashSet<>();
+//        while(headA != null) {
+//            set.add(headA);
+//            headA = headA.next;
+//        }
+//
+//        while(headB != null) {
+//            if (!set.contains(headB)) {
+//                headB = headB.next;
+//                continue;
+//            }
+//            return headB;
+//        }
+//
+//        return null;
+//    }
+
+    /**
+     * 双指针：细细体会
+     * @param headA
+     * @param headB
+     * @return
+     */
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
-        if (headA == null || headB == null)
-            return null;
+        ListNode p = headA;
+        ListNode q = headB;
 
-        Set<ListNode> set = new HashSet<>();
-        while(headA != null) {
-            set.add(headA);
-            headA = headA.next;
+        while (p != q) {
+            if (p == null)
+                p = headB;
+            else p = p.next;
+            if (q == null)
+                q = headA;
+            else q = q.next;
         }
 
-        while(headB != null) {
-            if (!set.contains(headB)) {
-                headB = headB.next;
-                continue;
-            }
-            return headB;
-        }
-
-        return null;
+        return p;
     }
-
 }
