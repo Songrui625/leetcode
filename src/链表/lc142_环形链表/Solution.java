@@ -14,21 +14,59 @@ public class Solution {
      * @return
      */
     //Version:1.0
+//    public ListNode detectCycle(ListNode head) {
+//        if (head == null || head.next == null) {
+//            return null;
+//        }
+//        ListNode p = head;
+//        Set<ListNode> set = new HashSet<>();
+//        while (p != null) {
+//            set.add(p);
+//            p  = p.next;
+//            if (set.contains(p)) {
+//                return p;
+//            }
+//        }
+//        return null;
+//    }
+
     public ListNode detectCycle(ListNode head) {
         if (head == null || head.next == null) {
             return null;
         }
-        ListNode p;
-        p = head;
-        Set<ListNode> set = new HashSet<>();
-        while (p != null) {
-            set.add(p);
-            p  = p.next;
-            if (set.contains(p)) {
-                return p;
-            }
+        ListNode low = head;
+        ListNode fast = head;
+        while (fast != null && fast.next != null) {
+            low = low.next;
+            fast = fast.next.next;
+            if (low == fast)
+                break;
         }
-        return null;
+
+        if (low != fast)
+            return null;
+        fast = head;
+        while (low != fast) {
+            low = low.next;
+            fast = fast.next;
+            if (low == fast)
+                break;
+        }
+
+        return low;
+    }
+
+    public static void main(String[] args) {
+        ListNode head = new ListNode(3);
+        head.next = new ListNode(2);
+        head.next.next = new ListNode(0);
+        head.next.next.next = new ListNode(-4);
+        head.next.next.next = head.next;
+
+        Solution solution = new Solution();
+        ListNode listNode = solution.detectCycle(head);
+        System.out.println(listNode.val);
+
     }
 
 }
