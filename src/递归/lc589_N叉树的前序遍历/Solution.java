@@ -22,19 +22,29 @@ class Node {
 public class Solution {
     List<Integer> res = new ArrayList<>();
 
-    public List<Integer> preorder(Node root) {
-        traverse(root);
-        return res;
-    }
+//    version:1.0
+//    public List<Integer> preorder(Node root) {
+//        traverse(root);
+//        return res;
+//    }
+//
+//    public Node traverse(Node root) {
+//        if (root == null) return root;
+//        else {
+//            res.add(root.val);
+//            for (int i = 0; i < root.children.size(); i++) {
+//                traverse(root.children.get(i));
+//            }
+//        }
+//        return root;
+//    }
 
-    public Node traverse(Node root) {
-        if (root == null) return root;
-        else {
-            res.add(root.val);
-            for (int i = 0; i < root.children.size(); i++) {
-                traverse(root.children.get(i));
-            }
+    public List<Integer> preorder(Node root) {
+        if (root == null) return res;
+        res.add(root.val);
+        for (int i = 0; i < root.children.size(); i++) {
+            preorder(root.children.get(i));
         }
-        return root;
+        return res;
     }
 }
